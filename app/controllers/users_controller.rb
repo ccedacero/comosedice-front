@@ -46,18 +46,5 @@ class UsersController < ApplicationController
 
     render json: @current_user
   end
-# sends twilio sms to user to confirm user registration
-  # def confirm_user(newUser) 
-  #   account_sid = 'account_sid goes here'
-  #   auth_token = 'auth_token goes here'
-  #   client = Twilio::REST::Client.new(account_sid, auth_token)
-    
-  #   from = '+13345083478' # Your Twilio number
-  #   to = '+my_cellphone' # Your mobile phone number
-  #   client.messages.create(
-  #   from: from,
-  #   to: to,
-  #   body: "Congratulations #{newUser}! You've succesfully registered to Como Se Dice. Happy Learning!"
-  #   )
-  # end
+
 end 
